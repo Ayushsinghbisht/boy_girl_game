@@ -1,0 +1,163 @@
+.gamecontainer{
+    height: 98vh;
+    width: 98vw;
+
+    background-image: url(gfgn_h651_210409.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.boy{
+    height: 40vh;
+    width: 20vw;
+
+    background-image: url(engineer\ man.png);
+    background-size: cover;
+    position: absolute;
+bottom:0;
+    top:40vh;
+    left:70vw;
+
+}
+.girlani{
+    height: 17vh;
+    width: 7vw;
+
+    background-image: url(girl.png);
+    background-size: cover;
+    position: absolute;
+
+    top:55vh;
+    left:20vw;
+    animation: obstacles 2s linear infinite;
+
+}
+.girl{
+    height: 17vh;
+    width: 7vw;
+
+    background-image: url(girl.png);
+    background-size: cover;
+    position: absolute;
+
+    top:55vh;
+    left:20vw;
+   
+
+}
+
+.animateboy{
+    /* background-color: red; */
+    animation: dino 0.4s linear;
+}
+.animateboydown{
+    /* background-color: red; */
+    animation: dinodown 0.4s linear;
+}
+.animateboyright{
+    /* background-color: red; */
+    animation: dinoright 0.2s linear;
+}
+.animateboyleft{
+    /* background-color: red; */
+    animation: dinoleft 0.2s linear;
+}
+
+@keyframes dino{
+    0%{
+         bottom:0;
+         top:40vh;
+    }
+    50%{
+        top:1vh;
+    bottom:500px;
+    }
+    100%{
+        top:40vh;
+    bottom:0;
+
+    }
+}
+@keyframes dinodown{
+    0%{
+        bottom:0;
+        top:40vh;
+   }
+   50%{
+       top:75vh;
+  
+   }
+   100%{
+       top:40vh;
+   bottom:0;
+
+   }
+}
+@keyframes dinoleft{
+    0%{
+         /* bottom:0; */
+         left:70vw;
+    }
+    50%{
+       left:60vw;
+    }
+    100%{
+        left:70vw;
+
+    }
+}
+@keyframes dinoright{
+    0%{
+        /* bottom:0; */
+        left:70vw;
+   }
+   50%{
+      left:80vw;
+   }
+   100%{
+       left:70vw;
+
+   }
+}
+
+@keyframes obstacles{
+    0%{
+left: -10vw;
+    }
+    100%{
+left: 100vw;
+    }
+}
+
+.gameover{
+    /* background-color: antiquewhite; */
+   padding-top: 20px;
+   padding-left: 20px;
+    visibility: hidden;
+    height: 7vh;
+    width: 10vw;
+    border: 2px solid black;
+    position:relative;
+    left: 50vw;
+    top: 10vh;
+    font-size: x-large;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bolder;
+
+}
+.score{
+    /* background-color: antiquewhite; */
+   padding-top: 20px;
+   padding-left: 20px;
+    /* visibility: hidden; */
+    height: 7vh;
+    width: 10vw;
+    /* border: 2px solid black; */
+    position:relative;
+    left: 50vw;
+    top: 10vh;
+    font-size: x-large;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bolder;
+
+}
